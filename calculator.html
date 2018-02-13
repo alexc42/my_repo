@@ -7,9 +7,15 @@ function cube() {
 var num = document.getElementById("n1");
 num.value = Math.pow(num.value, 3);
 }
+
 function sin() {
-var num = document.getElementById("n2");
+var num = document.getElementById("n3");
 num.value = Math.sin(num.value);
+
+function four() {
+var num = document.getElementById("n2");
+num.value = Math.pow(num.value, 4);
+>>>>>>> master
 }
 </script>
 </head>
@@ -24,9 +30,16 @@ num.value = Math.sin(num.value);
   </tr>
 
  <tr>
+
     <th>Sin:</th>
-    <th><input type="text" id="n2"><p></th> 
+    <th><input type="text" id="n3"><p></th> 
     <th><button onclick="sin()"> sin(x) </button></th>
+  </tr>
+
+ <tr>
+    <th>Number:</th>
+    <th><input type="text" id="n2"><p></th> 
+    <th><button onclick="four()"> x^4 </button></th>
   </tr>
 
 
